@@ -5,16 +5,16 @@ function init() {
   let index = 0;
   input.addEventListener('keydown', function(e) {
  
-	 let key = parseInt(e.detail);
+	let key = parseInt(e.detail);
 	 
-   if (key === code[index]) {
-     index++;
-     if (index === code.length) {
-         alert("Hurray!");
-         index = 0;
-       }
-     } 
-     else {
+  if (key === code[index]) {
+    index++;
+    if (index === code.length) {
+      alert("Hurray!");
+      index = 0;
+      }
+    }
+    else {
        index = 0;
      }
   });
